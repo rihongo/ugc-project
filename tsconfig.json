@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*" : ["./components/*"],
+      "@config/*" : ["./config/*"],
+      "@material-ui-customs/*" : ["./material-ui-customs/*"],
+      "@interfaces/*" : ["./interfaces/*"]
+    },
     "allowJs": true,
     "alwaysStrict": true,
     "esModuleInterop": true,
@@ -16,7 +23,11 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "experimentalDecorators" : true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]

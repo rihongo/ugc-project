@@ -4,16 +4,14 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui-customs/components/Link';
 
-export default function Index() {
+export default function About() {
     return (
         <Container maxWidth="sm">
             <Box my={4}>
                 <Typography variant="h4" component="h1" gutterBottom>
-                    Main
+                    about
                 </Typography>
-                <Link href="templates/about" as="about" color="secondary">
-                    Go to the about page
-                </Link>
+                <Link href="/" color="secondary">Go to the main page</Link>
             </Box>
         </Container>
     );
